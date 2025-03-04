@@ -1,0 +1,606 @@
+
+html {
+  scroll-behavior:smooth;
+}
+
+.container{
+   transition: width 0.3s ease; 
+  /* transition: all 0.3s ease; */
+}
+
+#header-nav{
+  padding: 4px;
+  top: 0; 
+  z-index: 1000;
+  background-color: #3F4E4F;
+  position: sticky; 
+}
+
+#header-nav > nav > a{
+  color: white;
+  font-weight: bold;
+}
+
+#title{
+  position: relative;
+  background-image: url('../images/background.png'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.dark-background{
+    background-color: #2C3639;
+    color: white;
+}
+
+.lighter-background{
+    background-color: #DCD7C9;
+}
+
+.light-background{
+  background-color: #3F4E4F;
+  color: white;
+}
+
+.btn-contacts{
+  background-color:  #2C3639;
+  color:  white;
+}
+
+.btn-contacts:hover{
+  background-color: #3F4E4F;
+  color:  white;
+}
+
+.btn-dark{
+  background-color:  #A27B5C;
+  color:  white;
+}
+
+.btn-dark:hover{
+  background-color:  #FFD95F;
+  color:  black;
+  font-weight: bold;
+}
+
+.nav-link.active {
+    color: #FFD95F;
+    font-weight: bold;
+    border-bottom: 2px solid #FFD95F;
+    background: none;
+  }
+
+
+  .nav-link {
+    color: white;
+  }
+  .nav-link:hover {
+    text-shadow: 0 0 10px #FFD95F, 0 0 20px #FFD95F, 0 0 30px #FFD95F; /* Glowing effect */
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+
+  }
+
+  .typing-text::after {
+    content: "|";
+    animation: blink ease 1s infinite;
+  }
+  
+  @keyframes blink {
+    0%, 100% {
+      opacity: 0;
+    } 50% {
+      opacity: 1;
+    }
+  }
+
+
+  section{
+    scroll-margin-top: 40px;
+    transition: opacity 1s ease-in-out; /* Fade-in effect */
+  }
+
+  /* When the section is in view, it becomes visible */
+.section.visible {
+  opacity: 1;
+}
+
+  /* When the section is in view, it becomes active */
+  .section.active {
+    opacity: 1;
+  }
+
+  p{
+    color: white;
+  }
+
+  #certifications p{
+    color: black;
+  }
+  
+  .title-header{
+    color: white;
+  }
+
+  .card-text{
+    color: black;
+  }
+
+  .card-img-top {
+    height: 200px; /* Set the height to your desired value */
+    object-fit: fill; /* Ensures the image covers the area without stretching */
+  }
+
+    /* Optional: Change the background color of the arrow buttons */
+
+    .carousel-control-prev{
+      border-top-left-radius: 30px;
+      border-bottom-left-radius: 30px;
+      border-right: none; /* Ensure no border on the right side */
+      background-color: rgba(0, 0, 0, 0.1); /* Add transparency for background color */
+    }
+
+    .carousel-control-next{
+      border-top-right-radius: 30px;
+      border-bottom-right-radius: 30px;
+      border-left: none; /* Ensure no border on the left side */
+      background-color: rgba(0, 0, 0, 0.1); /* Add transparency for background color */
+    }
+
+    /* Inactive Carousel Indicators */
+/* .carousel-indicators li {
+  background-color: #007bff; /* Change this to your desired color for inactive indicators */
+/*} */
+
+/* Active Carousel Indicator */
+.carousel-indicators .active {
+  background-color: #FFD95F; /* Change this to your desired color for the active indicator */
+}
+
+
+    #certifications{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+  #contact{
+    position: relative;
+    background-image: url('../images/background.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+  }
+  
+
+/* Add Animations */
+.animated-button {
+  background-color: #A27B5C; /* Base color for the button */
+  color: white; /* Text color */
+  transition: transform 1s ease, background-color 1s ease;
+  box-shadow: 0 0 5px #DCD7C9, 0 0 5px #DCD7C9, 0 0 5px #DCD7C9; /* Initial glow */
+}
+
+.animated-button:hover {
+  background-color: #FFD95F; /* Change the background color on hover */
+  color: black; /* Text color */
+  transform: translateY(-5px); /* Lift the button slightly on hover */
+  box-shadow: 0 0 5px #DCD7C9, 0 0 5px #DCD7C9, 0 0 5px #DCD7C9, 0 0 5px #DCD7C9; /* Stronger glow on hover */
+}
+
+/* Style for the profile image container */
+.profile-image {
+  background-color: #DCD7C9;
+  position: relative; /* Ensure we can position the shadow correctly */
+  border: 5px solid #FFD95F;/*#A27B5C; /* Add a border around the image */
+  padding: 5px; /* Add some padding between the border and the image */
+  border-radius: 15px; /* Make the corners of the border rounded */
+  box-shadow: 0 4px 20px rgb(179, 175, 175); /* Add a soft shadow around the image */
+  animation: zoomIn 1.5s ease-out forwards;  /* Zoom Effect on page load */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+  
+  
+}
+
+.profile-image:hover {
+  background-color: #FFF4B7;
+  transform: translateY(-40px) scale(1.1); /* Slightly lift the image on hover */
+  box-shadow: 0 8px 30px rgb(182, 137, 41); /* Enhance the shadow on hover */
+}
+
+/* Additional styles for responsive images */
+@media (max-width: 768px) {
+  .profile-image {
+    width: 100%; /* Ensure it scales well on smaller screens */
+    height: auto; /* Keep aspect ratio intact */
+  }
+
+  .navbar-brand {
+    margin-left: auto; /* Move the brand to the right */
+  }
+  .navbar-toggler {
+    margin-left: auto; /* Move the toggle button to the right */
+  }
+}
+
+
+.animated-title {
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.animated-text {
+  animation: fadeInText 2s ease-out forwards;
+}
+
+/* Animation for the title */
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(30px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Animation for the texts */
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Animation for the image */
+@keyframes zoomIn {
+      0% {
+          opacity: 0;
+          transform: scale(0.9);
+      }
+      100% {
+          opacity: 1;
+          transform: scale(1);
+      }
+  }
+
+.jobs-container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.job-entry {
+  position: relative; 
+  background-color: #3F4E4F;
+  color: white;
+  padding: 1.5em;
+  border-radius: 8px;
+  flex: 1;
+  min-width: 350px;
+}
+
+
+.job-entry h3{
+  color: #FFD95F;
+}
+
+/* Optional: Add a nice hover effect for the whole container */
+.jobs-container .job-entry {
+  transition: transform 0.3s ease;
+}
+
+.jobs-container .job-entry:hover {
+  transform: translateY(-10px); /* Slightly lift the item on hover */
+}
+
+/* Custom Bullet List */
+.custom-bullets {
+  list-style-type: none; /* Remove default bullets */
+  padding-left: 0;
+}
+
+.custom-bullets li {
+  position: relative;
+  padding-left: 30px; /* Space for the custom bullet */
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Custom Bullet Icon (Checkmark) */
+.bullet-icon {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #007bff; /* Blue color for the bullet */
+  font-size: 20px;
+}
+
+/* Hover Effects for List Items */
+.custom-bullets li:hover {
+  background-color: #DCD7C9; /* #e0f7fa; */
+  transition: background-color 0.3s ease;
+  color: black;
+  cursor: pointer;
+}
+
+.custom-bullets li:hover .bullet-icon {
+  color: rgb(14, 189, 151); /*#ff7043; /* Change bullet color on hover */
+}
+
+.certificate-link {
+  position: absolute; 
+  bottom: 5px; /* Adjusted for bottom margin */
+  right: 5px; /* Adjusted for right margin */
+  margin: 5px; /* Additional margin around the link */
+
+}
+
+.certificate-link a {
+  display: inline-block;
+  font-size: 1.2em;
+  color: #2C3639; /* This changes the link color for visibility */
+  text-decoration: none;
+  padding: 5px 10px;  /* Adds padding inside the link for better clickability */
+  background-color: #DCD7C9; /* Light background to make the link stand out */
+  border-radius: 5px;  /* Optional: adds rounded corners to the background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for better visibility */
+}
+
+.certificate-link a:hover {
+  color: black  ; /* Optional: add hover effect */
+  background-color:  #FFD95F; /* Slight background change on hover */
+}
+
+
+#education h3{
+  color: #FFD95F;
+}
+
+ /* Custom tooltip background color */
+ .tooltip-inner {
+  background-color: #f39c12; /* Change to your desired color */
+  color: white;  /* Change text color if needed */
+  border-radius: 8px; /* Optional: round corners */
+}
+
+/* Optional: Custom arrow color */
+ .tooltip-arrow {
+  border-top-color: #f39c12; /* Match the tooltip arrow color */
+} 
+
+
+#skills span{
+  font-weight: bold;
+  font-size: medium;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.skill {
+  width: 80px; /* Adjust the size of the logos */
+  height: 80px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #A27B5C;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  animation: pop-scale 2s ease-in-out infinite;
+}
+.skill img {
+  width: 100%; /* 70px;  Adjust the size of the logos */
+  height: 100%; /* 70px; */
+}
+.skill:hover{
+  background-color: #FFD95F;
+}
+
+
+@keyframes pop-scale {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2); /* Grow the element */
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1; /* Shrink back to original size */
+  }
+}
+
+/* PROGRESS BARS */ 
+
+.progress{
+  height: 22px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.progress-bar{
+  height: 100%;
+  background-color: #A27B5C;
+}
+
+.progress-bar:hover{
+  background-color: #FFD95F;
+  color: black;
+  font-weight: bold;
+}
+
+
+/******* PROJECT SECTION *******/
+#project{
+  height: 200vh;
+}
+
+#projects .container .card{
+  transition: transform 0.3s ease;
+}
+
+#projects .container .card:hover{
+  transform: translateY(-10px); /* Slightly lift the item on hover */
+  box-shadow: 0px 0px 20px #FFD95F;
+}
+
+.container .d-inline-block 
+{
+  padding: 10px;
+  transition: transform 0.5s ease-in-out, margin 0.3s ease, z-index 0.3s;
+  
+  position: relative;
+   z-index: 1; /* Normal state */
+  display: inline-block; /* Ensure it's inline-block but can scale */
+  transform-origin: center center; /* Ensure scaling happens from the center */
+}
+
+.container .d-inline-block:hover {
+  border-radius: 10px;
+  background-color: #DCD7C9;
+  color: black;
+  box-shadow: 0 0 10px #FFD95F, 0 0 10px #FFD95F, 0 0 10px #FFD95F; /* Glowing effect */
+  transform: scale(1.08); /* Scale up the element */
+  z-index: 10; /* Bring it to the front */
+}
+
+.container .d-inline-block h3{
+  color: #FFD95F;
+}
+
+
+.container .d-inline-block:hover h3{
+  color: #A27B5C;
+}
+
+.container .d-inline-block:hover p {
+  color: black;
+}
+
+/* Floating image for each section */
+.float-photo {
+  width: 150px;  /* Fixed width of the photo */
+  height: 150px; /* Fixed height of the photo */
+  margin-bottom: 20px; /* Space below the image */
+  border-radius: 10px; /* Optional, to give the image rounded corners */
+  background-color: #DCD7C9;
+}
+
+/* For the left-floating images */
+.float-left {
+  float: left;
+  margin-right: 20px; /* Space between the image and text */
+  animation: slideInFromLeft 1s ease-out forwards;
+}
+
+.float-right {
+  float: right;
+  margin-left: 20px; /* Space between the image and text */
+  animation: slideInFromRight 1s ease-out forwards;
+}
+
+
+
+/* Add animation for sliding the image from the left */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Add animation for sliding the image from the left */
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+.glass-container {
+  background: rgba(230, 224, 224, 0.1);  /* Semi-transparent white background */
+  border-radius: 15px;  /* Rounded corners */
+  padding: 2rem;  /* Spacing inside the container */
+  backdrop-filter: blur(10px);  /* Apply blur effect */
+  -webkit-backdrop-filter: blur(10px);  /* For Safari */
+  border: 1px solid rgba(255, 255, 255, 0.2);  /* Slight border for the frosted glass effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Add slight shadow for depth */
+}
+
+form .form-control {
+  background-color: rgba(255, 255, 255, 0.3); /* Slightly transparent background for form fields */
+  border-radius: 8px;  /* Rounded corners for input fields */
+}
+
+/* MODAL STYLING */
+.modal {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+  display: block;
+  margin: auto;
+  max-width: 80%;
+  max-height: 100%; 
+}
+
+/* Advanced Close button styling */
+.close {
+  position: absolute;
+  top: 5px;
+  right: 100px;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.6); /* Dark background for visibility */
+  color: white; /* White color for contrast */
+  border-radius: 50%; /* Circular button */
+  font-size: 30px; /* Increase font size */
+  font-weight: bold;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  cursor: pointer;
+  border: 2px solid rgba(255, 255, 255, 0.5); /* Light border for contrast */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Darker shadow for visibility */
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+/* Close button hover and active effects */
+.close:hover {
+  background-color: rgba(0, 0, 0, 0.8);  /* Darker background on hover */
+  color: #f1f1f1;  /* Slightly lighter text on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);  /* More prominent shadow on hover */
+  transform: scale(1.1); /* Slightly increase size */
+}
+
+.close:active {
+  background-color: rgba(0, 0, 0, 1);  /* Darkest background on click */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  /* Regular shadow on click */
+  transform: scale(1);  /* Slightly decrease size on click */
+}
