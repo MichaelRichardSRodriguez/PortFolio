@@ -52,11 +52,11 @@
             </div>
             <div class="col-lg-6">
               <h1 class="animated-title display-5 title-header fw-bold lh-1 mb-3">
-                I'm <span style="color: #FFD95F; font-family: 'Arial', sans-serif;">Michael Richard</span>
+                I'm <span span class="typing-text" style="color: #FFD95F; font-family: 'Arial', sans-serif;">Michael Richard</span>
               </h1>
-              <h1 class="animated-title title-header fw-bold lh-1 mb-3">
+              <!-- <h1 class="animated-title title-header fw-bold lh-1 mb-3">
                 a <span class="typing-text" style="color: #FFD95F; font-family: 'Arial', sans-serif;">Systems Developer.</span>
-              </h1>
+              </h1> -->
                 
               <p class="animated-text lead">Dynamic and analytical systems 
                   developer with expertise in 
@@ -77,16 +77,24 @@
                     <div class="container d-flex justify-content-lg-end 
                               justify-content-center justify-content-md-end py-5">
                       <div class="row">
-                        <div class = "col">
+                        <div class = "col" data-bs-toggle="tooltip" data-bs-placement="top"
+                            data-bs-custom-class="custom-tooltip"
+                            data-bs-title="Send Email">
                             <a class="btn animated-button" href="#contact"><img src="./assets/images/icons/email.png" height="30" alt="email address"/></a>
                         </div>
-                        <div class = "col">
+                        <div class = "col" data-bs-toggle="tooltip" data-bs-placement="top"
+                            data-bs-custom-class="custom-tooltip"
+                            data-bs-title="linkedin">
                             <a class="btn animated-button" href="https://www.linkedin.com/in/michael-richard-rodriguez" target="_blank"><img src="./assets/images/icons/linkedIn.png"  height="30" alt="linked-in account"/></a>
                         </div>
-                        <div class="col">
+                        <div class="col" data-bs-toggle="tooltip" data-bs-placement="top"
+                              data-bs-custom-class="custom-tooltip"
+                              data-bs-title="facebook">
                           <a class="btn animated-button" href="https://www.facebook.com/michaelrichard.rodriguez" target="_blank"><img src="./assets/images/icons/facebook.png"  height="30" alt="facebook account"/></a>
                         </div>
-                        <div class="col">
+                        <div class="col" data-bs-toggle="tooltip" data-bs-placement="top"
+                              data-bs-custom-class="custom-tooltip"
+                              data-bs-title="jobstreet">
                           <a class="btn animated-button" href="https://ph.jobstreet.com/profile/michaelrichard-rodriguez-F0w2zN5WlB" target="_blank"><img src="./assets/images/icons/jobstreet.png"  height="30" alt="jobstreet account"/></a>
                         </div>
                       </div>
@@ -287,7 +295,7 @@
             <div class="col-12 col-md-6 col-lg-3 pt-3">
               <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#projectModal">
                 <div class="card">
-                  <img src="./assets/gif/QueuingSystem.gif" class="card-img-top img-fluid" alt="Queuing System">
+                  <img src="./assets/gif/QueuingSystem.gif" class="card-img-top img-fluid" alt="QueuingSystem">
                 
                   <div class="card-body">
                     <h5 class="card-title">Queuing System</h5>
@@ -322,10 +330,10 @@
           <div class="col-12 col-md-6 col-lg-3 pt-3">
             <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#projectModalLiveDemo">
               <div class="card">
-                <img src="./assets/images/Card-Image-Template.png" class="card-img-top img-fluid" alt="Queuing System Web App">
+                <img src="./assets/images/Card-Image-Template.png" class="card-img-top img-fluid" alt="Task Management Web App">
                 <span class="badge bg-warning text-dark position-absolute top-0 end-0 m-2">With Demo</span>
                 <div class="card-body">
-                  <h5 class="card-title">Queuing System</h5>
+                  <h5 class="card-title">Task Management</h5>
                 </div>
               </div>
             </a>
@@ -597,6 +605,7 @@
           <div class="glass-container">
             <h2 class="text-start mb-4">Contact Me</h2>
             <div class="row justify-content-center">
+
                 <div class="col-md-12 col-lg-6 px-4 pt-5">
                   <form id="contactForm">
                     <div class="mb-3">
@@ -614,7 +623,8 @@
                     <button type="submit" class="animated-button rounded-pill btn btn-lg w-100 mt-3">Send Message</button>
                   </form>
                 </div>
-                <div class="col-md-12 col-lg-6 px-4 pt-5">
+
+                <div class="col-lg-6 col-md-12 col-12 px-4 pt-5">
 
                   <br/>
 
@@ -636,15 +646,21 @@
                     
                     <div class="row">
                       <!-- Facebook link -->
-                      <div class = "col">
+                      <div class = "col-4" data-bs-toggle="tooltip" data-bs-placement="top"
+                          data-bs-custom-class="custom-tooltip"
+                          data-bs-title="facebook">
                         <a class="btn animated-button" href="https://www.facebook.com/michaelrichard.rodriguez" target="_blank"><img src="./assets/images/icons/facebook.png" height="30" alt="facebook account"/></a>
                       </div>
                       <!-- LinkedIn link -->
-                      <div class = "col">
+                      <div class = "col-4" data-bs-toggle="tooltip" data-bs-placement="top"
+                          data-bs-custom-class="custom-tooltip"
+                          data-bs-title="linkedin">
                         <a class="btn animated-button" href="https://www.linkedin.com/in/michael-richard-rodriguez" target="_blank"><img src="./assets/images/icons/linkedIn.png" height="30" alt="linked-in account"/></a>
                       </div>
                       <!-- JobStreet link -->
-                      <div class="col">
+                      <div class="col-4" data-bs-toggle="tooltip" data-bs-placement="top"
+                            data-bs-custom-class="custom-tooltip"
+                            data-bs-title="jobstreet">
                         <a class="btn animated-button" href="https://ph.jobstreet.com/profile/michaelrichard-rodriguez-F0w2zN5WlB" target="_blank"><img src="./assets/images/icons/jobstreet.png"  height="30" alt="jobstreet account"/></a>
                       </div>
                     </div>
@@ -657,9 +673,8 @@
         </div>
   </section>   
 
-
-    <!-- Modal -->
-    <div id="imageModal" class="modal">
+    <!-- Image Modal -->
+    <div id="imageModal" class="custom-modal">
       <span class="close" onclick="closeModal()">&times;</span>
       <img id="modalImage" class="modal-content">
     </div>
@@ -684,7 +699,7 @@
   //Smooth scrolling to sections
   document.querySelectorAll('.nav-link').forEach(link => {
       link.addEventListener('click', function(e) {
-        e.preventDefault();
+        //e.preventDefault();
         const targetId = this.getAttribute('href').slice(1);
         document.getElementById(targetId).scrollIntoView({
           behavior: 'smooth'
@@ -707,7 +722,8 @@
 
   // make a words array
   const words = [
-    "Systems Developer."
+    "Michael Richard",
+    "a Systems Developer"
   ];
 
   // start typing effect
@@ -774,33 +790,33 @@
   //************* EMAIL SENDING ***********************
 
 
-    (function() {
-      emailjs.init("YOUR_USER_ID"); // Replace with your EmailJS user ID
-    })();
+    // (function() {
+    //   emailjs.init("YOUR_USER_ID"); // Replace with your EmailJS user ID
+    // })();
 
-    document.getElementById("contactForm").addEventListener("submit", function(event) {
-      event.preventDefault();
+    // document.getElementById("contactForm").addEventListener("submit", function(event) {
+    //   event.preventDefault();
 
-      // Get form values
-      var name = document.getElementById("name").value;
-      var email = document.getElementById("email").value;
-      var message = document.getElementById("message").value;
+    //   // Get form values
+    //   var name = document.getElementById("name").value;
+    //   var email = document.getElementById("email").value;
+    //   var message = document.getElementById("message").value;
 
-      // Create the message object
-      var messageData = {
-        from_name: name,
-        from_email: email,
-        message: message
-      };
+    //   // Create the message object
+    //   var messageData = {
+    //     from_name: name,
+    //     from_email: email,
+    //     message: message
+    //   };
 
-      // Send the message using EmailJS
-      emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", messageData)
-        .then(function(response) {
-          alert("Message sent successfully!");
-        }, function(error) {
-          alert("Failed to send the message. Please try again later.");
-        });
-    });
+    //   // Send the message using EmailJS
+    //   emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", messageData)
+    //     .then(function(response) {
+    //       alert("Message sent successfully!");
+    //     }, function(error) {
+    //       alert("Failed to send the message. Please try again later.");
+    //     });
+    // });
 
 /**************** HANDLING MODAL ***************************/
 // Function to open the modal with the clicked image
@@ -816,6 +832,36 @@ function closeModal() {
   var modal = document.getElementById("imageModal");
   modal.style.display = "none";
 }
+
+
+//AUTO SELECT NAV WHEN SECTION IS VIEWED
+// Select all sections and nav links
+ // Select all sections and nav links
+ const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('nav ul li a');
+
+    // Create an intersection observer to track when sections are in view
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        const id = entry.target.id;
+        const navLink = document.querySelector(`a[href="#${id}"]`);
+
+        if (entry.isIntersecting) {
+          // Add active class to the nav link when section is in view
+          navLink.classList.add('active');
+        } else {
+          // Remove active class when section is out of view
+          navLink.classList.remove('active');
+        }
+      });
+    }, {
+      threshold: 0.5  // Trigger when at least 50% of the section is visible
+    });
+
+    // Observe each section
+    sections.forEach(section => {
+      observer.observe(section);
+    });
 
   </script>
 
